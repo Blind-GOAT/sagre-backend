@@ -1,0 +1,31 @@
+# Elenco delle fonti. Ogni fonte e' un blocco sotto "sorgenti".
+# I blocchi qui sotto sono MODELLI con indirizzi finti: sostituiscili con fonti reali
+# di cui hai verificato licenza/condizioni d'uso, poi togli il commento.
+sorgenti: []
+
+# --- Calendario iCal (es. di un comune o di una Pro Loco) ---
+#  - nome: Comune di Esempio
+#    tipo: ical
+#    url: https://esempio.it/eventi.ics
+#    comune: Esempio            # luogo fisso se il calendario e' di un solo comune
+#    filtro: [sagra, festa, fiera]   # tiene solo eventi che contengono una di queste parole
+#
+# --- API JSON (es. open data regionali) ---
+#  - nome: Open data Regione X
+#    tipo: json
+#    url: https://dati.esempio.it/eventi.json
+#    elementi: risultati.eventi       # percorso della lista nel JSON (vuoto se e' gia' una lista)
+#    campi: {nome: titolo, comune: luogo.comune, inizio: data_inizio, fine: data_fine, url: link}
+#
+# --- CSV scaricabile ---
+#  - nome: Dataset Provincia Y
+#    tipo: csv
+#    url: https://dati.esempio.it/eventi.csv
+#    delimitatore: ";"
+#    campi: {nome: Titolo, comune: Comune, provincia: Provincia, inizio: Inizio, fine: Fine}
+#
+# --- Pagina HTML (selettori CSS) ---
+#  - nome: Portale Z
+#    tipo: html
+#    url: https://esempio.it/sagre
+#    selettori: {elemento: ".evento", nome: "h3", comune: ".luogo", data: ".date", link: "a"}
